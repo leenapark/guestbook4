@@ -9,7 +9,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form action="/guestbook4/guest/add" method="post">
+	<form action="${pageContext.request.contextPath }/guest/add" method="post">
 		<table border="1">
 			<tr>
 				<td>이름</td>
@@ -37,7 +37,7 @@
 				<td>${gVo.no }</td>
 				<td>${gVo.name }</td>
 				<td>${gVo.regDate }</td>
-				<td><a href="/guestbook4/guest/dForm?no=${gVo.no }">삭제
+				<td><a href="${pageContext.request.contextPath }/guest/dForm?no=${gVo.no }">삭제
 				</a></td>
 			</tr>
 			<tr>

@@ -15,14 +15,14 @@
 		<p>비밀 번호가 틀렸습니다. 다시 입력해주세요.</p>
 	</c:if>
 	
-	<form action="/guestbook4/guest/delete" method="post">
+	<form action="${pageContext.request.contextPath }/guest/delete" method="post">
 		비밀번호<input type="password" name="password">
 		<input type="text" name="no" value="${param.no }">
 		<button type="submit">확인</button>
 
 	</form>
 	<br>
-	<a href="/guestbook4/guest/list">메인으로 돌아가기</a>
+	<a href="${pageContext.request.contextPath }/guest/list">메인으로 돌아가기</a>
 	
 </body>
 </html>
