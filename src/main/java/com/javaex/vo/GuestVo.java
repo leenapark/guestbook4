@@ -17,7 +17,7 @@ public class GuestVo {
 		this.no = no;
 	}
 
-
+	/*************delete 생성자***************/
 	public GuestVo(int no, String password) {
 		this.no = no;
 		this.password = password;
